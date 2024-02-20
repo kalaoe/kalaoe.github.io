@@ -1,0 +1,62 @@
+html {
+    background-color: midnightblue;
+    font-family: 'Hubballi';
+}
+
+@font-face {
+    font-family: 'MoonTime-Regular';
+    src: url('../fonts/MoonTime-Regular.ttf');
+}
+
+.projects-header {
+    font-family: 'MoonTime-Regular';
+    font-size: 70px;
+    color: white;
+    text-align: center;
+}
+
+.column {
+    display: inline-block;
+    background-color: green;
+    margin: 0 auto;
+    padding: 10px;
+    width: 150px;
+    height: 600px;
+    margin: 10px;
+}
+
+.column:hover {
+    background-color: #aefea4
+}
+
+.category-links {
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+
+.upper-section {
+    margin: 0;
+    padding: 0;
+    background-image: url('../img/placeholder.png');
+    background-repeat: no-repeat;
+    background-color: lightblue;
+    background-size: cover;
+    height: 550px;
+}
+
+.main-info {
+    margin-top: 220px;
+    color: white;
+    text-align: center;
+}
+
+ul, body {
+    margin: 0;
+    padding: 0;
+}
+
+ul > li {
+    display: inline-block;
+}
+
