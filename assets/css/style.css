@@ -152,6 +152,8 @@ h1 {
     font-size: 40px;
     background-color: var(--sky-dark);
     color: rgb(from var(--text-color) r g b / 60%);
+
+    transition: 0.3s;
 }
 
 .column:hover {
