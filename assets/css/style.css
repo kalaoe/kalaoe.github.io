@@ -1,26 +1,11 @@
-#cursor {
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    background: #662b59;
-    border-radius: 50%;
-    top: var(--y, 0);
-    left: var(--x, 0);
-    transform: translate(-50%, -50%);
-    z-index: 2;
-    mix-blend-mode: color-dodge;
-    transition: transform .2s;
-  }
-
-
-
 :root {
-    --main-bg: #24223c;
-    --sky-dark: #181a37;
-    --sky-light: #888ac2;
+    --main-bg: #2D475B;
+    --sky-dark: #548FAA;
+    --sky-light: #CFB0B5;
     --text-color: #fff;
     --moon-color: #fff;
-    --pink: #f484a9;
+    --moon-glow: rgba(214, 208, 197, 1); /* rgba format (https://rgbacolorpicker.com/hex-to-rgba) */
+    --pink: #CFB0B5;
 }
 
 html {
@@ -28,6 +13,10 @@ html {
     font-size: 20px;
     background-color: var(--main-bg);
     color: var(--text-color);
+    cursor: none;
+}
+
+:hover {
     cursor: none;
 }
 
@@ -87,7 +76,7 @@ h1 {
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     border-radius: 50%;
-    box-shadow: 0 0 50px 1em #f4a6cf;
+    box-shadow: 0 0 50px 1em var(--moon-glow);
 }
 
 .main-info {
@@ -132,6 +121,11 @@ h1 {
     padding: 0;
     margin: 0;
     background-color: var(--main-bg);
+}
+
+#about-me {
+    max-width: 700px;
+    margin: 140px;
 }
 
 #projects-header {
@@ -205,6 +199,23 @@ footer {
     margin: 200px;
 }
 
+/* - - - - - - - - - - 
+    CURSOR
+ - - - - - - - - - - - */
+#cursor {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: #ffffff;
+    border-radius: 50%;
+    top: var(--y, 0);
+    left: var(--x, 0);
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    /* mix-blend-mode: color-dodge; */
+    transition: transform .2s;
+    pointer-events: none;
+  }
 
 /* - - - - - - - - - - 
     STARS
