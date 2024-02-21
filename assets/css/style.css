@@ -14,6 +14,18 @@ a {
     text-decoration: none;
 }
 
+/* upper section */
+.upper-section {
+    margin: 0;
+    padding: 0;
+    /* background-image: url('../img/placeholder.png');
+    background-repeat: no-repeat;
+    background-size: cover; */
+    background: linear-gradient(rgb(20, 30, 51), rgb(159, 140, 186));
+     
+    height: 550px;
+}
+
 h1 {
     font-size: 40px;
     padding: 0;
@@ -33,9 +45,29 @@ h1 {
     color: pink;
 }
 
+#moon {
+    height: 35px;
+    width: 35px;
+    padding-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 150px;
+    background-color: #eeecf5;
+    border-radius: 50%;
+    display:table;
+    box-shadow: 0 0 50px 1em #f4a6cf;
+}
+
+.main-info {
+    margin-top: 50px;
+    color: white;
+    text-align: center;
+}
 
 /* .subtitle {
 } */
+
+/* lower section */
 
 .projects-header {
     font-family: 'MoonTime-Regular';
@@ -56,27 +88,12 @@ h1 {
 }
 
 .column:hover {
-    background-color: cornflowerblue
+    background-color: lightgray;
+    box-shadow: 0 0 50px 0.5em pink;
 }
 
 .category-links {
     width: 100%;
-    color: white;
-    text-align: center;
-}
-
-.upper-section {
-    margin: 0;
-    padding: 0;
-    background-image: url('../img/placeholder.png');
-    background-repeat: no-repeat;
-    background-color: lightblue;
-    background-size: cover;
-    height: 550px;
-}
-
-.main-info {
-    margin-top: 220px;
     color: white;
     text-align: center;
 }
