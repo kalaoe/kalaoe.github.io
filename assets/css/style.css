@@ -1,12 +1,41 @@
 html {
     background-color: midnightblue;
     font-family: 'Hubballi';
+    font-size: 20px;
 }
 
 @font-face {
     font-family: 'MoonTime-Regular';
     src: url('../fonts/MoonTime-Regular.ttf');
 }
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 40px;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar {
+    text-align: right;
+}
+
+/* navbar individual text elements */
+.navbar > ul > li {
+    margin: 15px;
+}
+
+.navbar > ul > li > a:hover {
+    color: pink;
+}
+
+
+/* .subtitle {
+} */
 
 .projects-header {
     font-family: 'MoonTime-Regular';
@@ -17,7 +46,8 @@ html {
 
 .column {
     display: inline-block;
-    background-color: green;
+    writing-mode: vertical-lr;
+    background-color: gray;
     margin: 0 auto;
     padding: 10px;
     width: 150px;
@@ -26,7 +56,7 @@ html {
 }
 
 .column:hover {
-    background-color: #aefea4
+    background-color: cornflowerblue
 }
 
 .category-links {
@@ -59,4 +89,5 @@ ul, body {
 ul > li {
     display: inline-block;
 }
+
 
