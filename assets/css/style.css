@@ -81,6 +81,7 @@ h1 {
 
 .main-info {
     margin-top: 80px;
+    padding: 20px 40px 10px 40px;
     color: white;
     text-align: center;
 }
@@ -150,12 +151,13 @@ h1 {
     text-align: right;
     font-size: 40px;
     background-color: var(--sky-dark);
-    color: rgb(from var(--text-color) r g b / 60%)
+    color: rgb(from var(--text-color) r g b / 60%);
 }
 
 .column:hover {
     background-color: var(--sky-light);
     box-shadow: 0 0 50px 0.5em var(--pink);
+    transition: 0.5s;
 }
 
 #category-links {
