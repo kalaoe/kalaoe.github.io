@@ -4,13 +4,13 @@
     --sky-2: #888ac2;
     --text-color: #fff;
     --moon-color: #fff;
-    --moon-glow: rgb(247, 212, 218);
+    --pink: #f484a9;
 }
 
 html {
     font-family: 'Hubballi';
     font-size: 20px;
-    background-color: #999999;
+    background-color: var(--main-bg);
 }
 
 @font-face {
@@ -54,7 +54,7 @@ h1 {
 }
 
 .navbar > ul > li > a:hover {
-    color: pink;
+    color: var(--pink);
 }
 
 #moon {
@@ -137,7 +137,7 @@ h1 {
 
 .column:hover {
     background-color: lightgray;
-    box-shadow: 0 0 50px 0.5em pink;
+    box-shadow: 0 0 50px 0.5em var(--pink);
 }
 
 #category-links {
