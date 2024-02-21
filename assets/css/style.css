@@ -127,12 +127,17 @@ h1 {
 .column {
     display: inline-block;
     writing-mode: vertical-lr;
-    background-color: gray;
-    margin: 0 auto;
+
     padding: 10px;
+    margin: 5px 20px;
+
     width: 150px;
     height: 600px;
-    margin: 10px;
+
+    text-align: right;
+    font-size: 40px;
+    background-color: gray;
+    color: rgb(from var(--text-color) r g b / 60%)
 }
 
 .column:hover {
