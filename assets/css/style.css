@@ -5,7 +5,7 @@
     --text-color: #fff;
     --moon-color: #fff;
     --moon-glow: rgba(214, 208, 197, 1); /* rgba format (https://rgbacolorpicker.com/hex-to-rgba) */
-    --pink: #CFB0B5;
+    --accent: #715c76;
 }
 
 html {
@@ -41,7 +41,7 @@ a {
     background-repeat: no-repeat;
     background-size: cover; */
     background: linear-gradient(var(--sky-dark), var(--sky-light));
-    height: 700px;
+    height: 70vh;
 
     overflow: hidden;
 }
@@ -61,7 +61,7 @@ h1 {
 }
 
 .navbar > ul > li > a:hover {
-    color: var(--pink);
+    color: var(--accent);
 }
 
 #moon {
@@ -158,7 +158,7 @@ h1 {
 
 .column:hover {
     background-color: var(--sky-light);
-    box-shadow: 0 0 50px 0.5em var(--pink);
+    box-shadow: 0 0 50px 0.2em var(--accent);
     transition: 0.5s;
 }
 
