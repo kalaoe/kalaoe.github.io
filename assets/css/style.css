@@ -1,8 +1,9 @@
 :root {
     --main-bg: #2D475B;
+    --bg-dark: #0d0c1e;
     --sky-dark: #548FAA;
     --sky-light: #CFB0B5;
-    --text-color: #fff;
+    --text-color: #eff5f6;
     --moon-color: #fff;
     --moon-glow: rgba(214, 208, 197, 1); /* rgba format (https://rgbacolorpicker.com/hex-to-rgba) */
     --accent: #715c76;
@@ -18,7 +19,7 @@
 html {
     font-family: 'Hubballi';
     font-size: 20px;
-    background-color: var(--main-bg);
+    background: linear-gradient(var(--main-bg) 50%, var(--bg-dark));
     color: var(--text-color);
     cursor: none;
 }
@@ -42,10 +43,10 @@ MARK: upper section
 */
 .upper-section {
     position: relative;
-    margin: 0;
+    /* margin: 0; */
     padding: 0;
     background: linear-gradient(var(--sky-dark), var(--sky-light));
-    height: 70vh;
+    height: 80vh;
 
     overflow: hidden;
 }
@@ -125,13 +126,28 @@ MARK: - lower section
 .lower-section {
     position: relative;
     padding: 0;
-    margin: 0;
-    background-color: var(--main-bg);
+    padding-bottom: 70px;
+    margin: 0; 
+    /* background-color: linear-gradient(var(--main-bg), var(--bg-dark)); */
+}
+
+#about-me-container  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #about-me {
-    max-width: 700px;
-    margin: 140px;
+    max-width: 600px;
+    margin: 140px 0px 140px 140px;
+    font-size: 22px
+}
+
+#portrait {
+    height: auto;
+    width: auto;
+    max-height: 300px;
+    max-width: 300px;
 }
 
 #projects-header {
@@ -156,7 +172,7 @@ MARK: - lower section
     text-align: right;
     font-size: 40px;
     background-color: var(--sky-dark);
-    color: rgb(from var(--text-color) r g b / 60%);
+    color: var(--text-color);
 
     transition: 0.3s;
 }
@@ -184,7 +200,7 @@ MARK: - lower section
 }
 
 #games {
-    background-image: linear-gradient(rgba(45, 71, 91, 0), rgba(45, 71, 91, 0), rgba(45, 71, 91, 1)),url('../img/placeholder2.png');
+    background-image: linear-gradient(rgba(45, 71, 91, 0), rgba(45, 71, 91, 0), rgba(45, 71, 91, 1)),url('../img/preview/games-preview.png');
 }
 
 #artwork {
@@ -192,7 +208,7 @@ MARK: - lower section
 }
 
 #models {
-    background-image: linear-gradient(rgba(45, 71, 91, 0), rgba(45, 71, 91, 0), rgba(45, 71, 91, 1)),url('../img/placeholder2.png');
+    background-image: linear-gradient(rgba(45, 71, 91, 0), rgba(45, 71, 91, 0), rgba(45, 71, 91, 1)),url('../img/preview/models-preview.png');
 }
 
 ul, body {
@@ -205,8 +221,20 @@ ul > li {
     display: inline-block;
 }
 
-footer {
-    margin: 200px;
+/*
+MARK: footer
+*/
+
+footer { 
+    position: absolute; 
+    width: 100%;
+    background: var(--bg-dark);
+    text-align: center;
+}
+
+#footer-text {
+    text-align: center;
+    font-size: 16px
 }
 
 /* 
@@ -770,6 +798,13 @@ MARK: image gallery
 }
 
 /* 
+MARK: socials
+*/
+.fa-brands {
+    margin: 10px 5px 20px 5px;
+}
+
+/* 
 MARK: construction
 */
 .construction-wrapper {
@@ -806,4 +841,9 @@ MARK: construction
 .construction-wrapper a:hover {
     background-color: var(--sky-light);
     color: #222
+}
+
+.wip-stripe {
+    background: #222;
+    text-align: center;
 }

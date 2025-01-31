@@ -5,7 +5,7 @@
         <title>portfolio ✦ chloe lin</title>
         <link rel="icon" href="assets/img/favicon.png">
         <link href='https://fonts.googleapis.com/css?family=Hubballi' rel='stylesheet'>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://kit.fontawesome.com/1e13bd3675.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
     </head>
     <body>
@@ -23,9 +23,11 @@
             <div class="main-info">
                 <h1>chloe ✦ lin</h1>
                 <p class="subtitle">a designer, artist, & developer in California</p>
-                <a href="https://github.com/kalaoe" class="fa fa-github" target="_blank"></a>
-                <a href="https://www.instagram.com/lyflan/" class="fa fa-instagram" target="_blank"></a>
-                <a href="https://www.instagram.com/lyflan/" class="fa fa-itch-io" target="_blank"></a>
+                <a href="https://github.com/kalaoe" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://lyflan.itch.io/" target="_blank"><i class="fa-brands fa-itch-io"></i></a>
+                <a href="https://www.instagram.com/lyflan/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://bsky.app/profile/lyflan.bsky.social" target="_blank"><i class="fa-brands fa-bluesky"></i></a>
+                <a href="https://www.youtube.com/@lyflan" target="_blank"><i class="fa-brands fa-youtube"></i></a>
             </div>
             <div class="wave-divider">
                 <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
@@ -41,24 +43,35 @@
             </section>
         </header>
         <div class="lower-section">
-            <p id="about-me">
-                hi, i'm chloe (or kalaoe, if you're trying to find me on the web).
-                i try to strike a balance between technical craftsmanship, art, and emotion in all of my work :)
-            </p>
+            <div id="about-me-container">
+                <div id="about-me">
+                    <p>
+                        hi, i'm chloe (or kal, if you're trying to find me on the web).
+                        i try to strike a balance between technical craftsmanship, art, and emotion in all of my work!
+                    </p>
+                </div>
+                <img src="assets/img/portrait.png" id="portrait">
+            </div>
+
             <h2 id="projects-header">projects</h2>
                 <div id="category-links">
-                    <a href="software.html" class="column" id="software">Software </a>
+                    <a href="software.html" class="column" id="software">Software</a>
                     <a href="games.html" class="column" id="games">Games</a>
                     <!-- maybe replace illust.html with instagram link -->
-                    <a href="artwork.html" class="column" id="artwork">Illustrations</a>
+                    <a href="artwork.html" class="column" id="artwork">Artwork</a>
                     <a href="models.html" class="column" id="models">Three-Dimensional Models</a>
                 </div>
             </div>
-        </div>
-        <footer>
-            ig, linkedin, email, etcetc
-        </footer>
-
+        </div>        
         <script src="assets/js/script.js"></script>
     </body>
+    
+    <footer>
+        <p id="footer-text">made with ♡ and an unyielding desire to create.</p>
+        <a href="https://github.com/kalaoe" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="https://lyflan.itch.io/" target="_blank"><i class="fa-brands fa-itch-io"></i></a>
+        <a href="https://www.instagram.com/lyflan/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://bsky.app/profile/lyflan.bsky.social" target="_blank"><i class="fa-brands fa-bluesky"></i></a>
+        <a href="https://www.youtube.com/@lyflan" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+    </footer>
 </html>
