@@ -8,6 +8,13 @@
     --accent: #715c76;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: 0.2s linear
+}
+
 html {
     font-family: 'Hubballi';
     font-size: 20px;
@@ -30,9 +37,9 @@ a {
     text-decoration: none;
 }
 
-/* - - - - - - - - - - 
-    UPPER SECTION 
- - - - - - - - - - - - */
+/*
+MARK: upper section 
+*/
 .upper-section {
     position: relative;
     margin: 0;
@@ -89,8 +96,9 @@ h1 {
 /* .subtitle {
 } */
 
-
-/* wave */
+/* 
+MARK: wave 
+*/
 .wave-divider {
     position: absolute;
     bottom: 0;
@@ -114,9 +122,9 @@ h1 {
     fill: var(--main-bg);
 }
 
-/* - - - - - - - - - - 
-    LOWER SECTION 
- - - - - - - - - - - - */
+/* 
+MARK: - lower section 
+*/
 .lower-section {
     position: relative;
     padding: 0;
@@ -182,7 +190,7 @@ h1 {
 }
 
 #illustrations {
-    background-image: url('../img/placeholder2.png');
+    background-image: url('../img/illust/elys-glow.png');
 }
 
 #models {
@@ -203,13 +211,13 @@ footer {
     margin: 200px;
 }
 
-/* - - - - - - - - - - 
-    CURSOR
- - - - - - - - - - - - */
+/* 
+MARK: cursor 
+*/
 #cursor {
     position: absolute;
-    width: 20px;
-    height: 20px;
+    width: 10px;
+    height: 10px;
     background: #ffffff;
     border-radius: 50%;
     top: var(--y, 0);
@@ -220,11 +228,10 @@ footer {
     transition: transform .2s;
     pointer-events: none;
   }
-
-/* - - - - - - - - - - 
-    STARS
-    @source https://www.codewithrandom.com/2023/11/21/css-star-animation/
- - - - - - - - - - - - */
+  
+/* 
+MARK: rising stars
+@source https://www.codewithrandom.com/2023/11/21/css-star-animation/ */
 .star-wrapper div {
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
@@ -727,4 +734,26 @@ footer {
     to {
         transform: translateY(-1100px);
     }
+}
+
+/*
+MARK: image gallery
+*/
+.container {
+    padding: 2rem 5%;
+}
+
+.container .image-container {
+    columns: 10rem 5;
+    gap: 0.5rem
+}
+
+.container .image-container img {
+    width: 100%;
+    margin-bottom: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.container .image-container img:hover {
+    transform: scale(1.01)
 }
