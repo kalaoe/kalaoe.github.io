@@ -176,22 +176,23 @@ MARK: - lower section
 #category-links .column {
     background-repeat: no-repeat;
     background-size: cover;
+    background-blend-mode: hard-light;
 }
 
 #software {
-    background-image: url('../img/preview/software-preview.png');
+    background: linear-gradient(rgba(45, 71, 91, 0), rgba(45, 71, 91, 0), rgba(45, 71, 91, 1)), url('../img/preview/software-preview.png');
 }
 
 #games {
-    background-image: url('../img/placeholder2.png');
+    background-image: linear-gradient(rgba(45, 71, 91, 0), rgba(45, 71, 91, 0), rgba(45, 71, 91, 1)),url('../img/placeholder2.png');
 }
 
 #artwork {
-    background-image: url('../img/preview/artwork-preview.png');
+    background-image: linear-gradient(rgba(45, 71, 91, 0), rgba(45, 71, 91, 0), rgba(45, 71, 91, 1)),url('../img/preview/artwork-preview.png');
 }
 
 #models {
-    background-image: url('../img/placeholder2.png');
+    background-image: linear-gradient(rgba(45, 71, 91, 0), rgba(45, 71, 91, 0), rgba(45, 71, 91, 1)),url('../img/placeholder2.png');
 }
 
 ul, body {
@@ -734,10 +735,10 @@ MARK: rising stars
 }
 
 /* 
-MARK: -artwork
+MARK: -headers
 */
 
-#artwork-header {
+.header {
     margin: 0;
     padding-top: 40px;
     font-family: 'MoonTime-Regular';
@@ -766,4 +767,43 @@ MARK: image gallery
 
 .container .image-container img:hover {
     transform: scale(1.01)
+}
+
+/* 
+MARK: construction
+*/
+.construction-wrapper {
+    text-align: center;
+    padding: 20px;
+    /* margin: 100px 50px; */
+    background: var(--sky-dark);
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    color: var(--text-color);
+}
+.construction-wrapper img {
+    max-width: 150px;
+    margin-bottom: 20px;
+}
+.construction-wrapper h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+.construction-wrapper p {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+.construction-wrapper a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #222;
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+.construction-wrapper a:hover {
+    background-color: var(--sky-light);
+    color: #222
 }
