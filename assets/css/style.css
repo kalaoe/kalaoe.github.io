@@ -46,7 +46,7 @@ MARK: upper section
     /* margin: 0; */
     padding: 0;
     background: linear-gradient(var(--sky-dark), var(--sky-light));
-    height: 80vh;
+    height: 62vh;
 
     overflow: hidden;
 }
