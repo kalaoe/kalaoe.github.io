@@ -44,9 +44,6 @@ MARK: upper section
     position: relative;
     margin: 0;
     padding: 0;
-    /* background-image: url('../img/placeholder.png');
-    background-repeat: no-repeat;
-    background-size: cover; */
     background: linear-gradient(var(--sky-dark), var(--sky-light));
     height: 70vh;
 
@@ -182,15 +179,15 @@ MARK: - lower section
 }
 
 #software {
-    background-image: url('../img/placeholder2.png');
+    background-image: url('../img/preview/software-preview.png');
 }
 
 #games {
     background-image: url('../img/placeholder2.png');
 }
 
-#illustrations {
-    background-image: url('../img/illust/elys-glow.png');
+#artwork {
+    background-image: url('../img/preview/artwork-preview.png');
 }
 
 #models {
@@ -734,6 +731,19 @@ MARK: rising stars
     to {
         transform: translateY(-1100px);
     }
+}
+
+/* 
+MARK: -artwork
+*/
+
+#artwork-header {
+    margin: 0;
+    padding-top: 40px;
+    font-family: 'MoonTime-Regular';
+    font-size: 70px;
+    color: var(--text-color);
+    text-align: center;
 }
 
 /*
