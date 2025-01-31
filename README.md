@@ -1,7 +1,7 @@
 # chloe ✦ lin | personal portfolio site
-Welcome to my [Personal Portfolio](https://kalaoe.github.io)!
+<img width="1400" alt="Screenshot 2025-01-31 at 12 51 19" src="https://github.com/user-attachments/assets/bfad8c46-5381-4151-850c-08da2bc7059e" />
 
-<img width="1497" alt="Screenshot 2025-01-31 at 12 51 19" src="https://github.com/user-attachments/assets/bfad8c46-5381-4151-850c-08da2bc7059e" />
+Welcome to my [Personal Portfolio](https://kalaoe.github.io)!
 
 This site is intended to showcase my work as a designer, artist, and developer, blending creativity with clear and functional design. Built using **HTML**, **CSS**, and **JavaScript**, the project reflects my personal style and dedication to creating visually engaging and personalized user-friendly experiences.
 
