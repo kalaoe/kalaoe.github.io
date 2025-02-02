@@ -146,11 +146,8 @@ MARK: - lower section
 #portrait {
     height: auto;
     width: auto;
-    max-height: 400px;
-    max-width: 250px;
-    margin-top: 50px;
-    margin: 2rem;
-    padding: 2rem;
+    max-height: 300px;
+    max-width: 300px;
 }
 
 #projects-header {
