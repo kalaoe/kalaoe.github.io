@@ -143,6 +143,10 @@ MARK: - lower section
     font-size: 22px
 }
 
+#about-me p {
+    padding: 10px;
+}
+
 #portrait {
     height: auto;
     width: auto;
