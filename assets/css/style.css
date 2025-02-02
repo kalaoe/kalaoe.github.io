@@ -146,8 +146,11 @@ MARK: - lower section
 #portrait {
     height: auto;
     width: auto;
-    max-height: 300px;
-    max-width: 300px;
+    max-height: 400px;
+    max-width: 250px;
+    margin-top: 50px;
+    margin: 2rem;
+    padding: 2rem;
 }
 
 #projects-header {
@@ -193,6 +196,7 @@ MARK: - lower section
     background-repeat: no-repeat;
     background-size: cover;
     background-blend-mode: hard-light;
+    border-radius: 0.1rem;
 }
 
 #software {
@@ -812,7 +816,7 @@ MARK: construction
     padding: 20px;
     /* margin: 100px 50px; */
     background: var(--sky-dark);
-    border-radius: 15px;
+    border-radius: 1rem;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     color: var(--text-color);
 }
